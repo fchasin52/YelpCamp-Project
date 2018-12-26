@@ -4,7 +4,7 @@
   "description": "YelpCamp Code-Along Project from Colt Steele Web Dev course",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Frederic Chasin",
