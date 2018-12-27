@@ -1,4 +1,4 @@
-var express     = require("express"),
+const express     = require("express"),
     app         = express(),
     bodyParser  = require("body-parser"),
     mongoose    = require("mongoose"),
@@ -14,11 +14,12 @@ var express     = require("express"),
     methodOverride = require("method-override");
     
 //requiring routes
-var commentRoutes    = require("./routes/comments"),
+const commentRoutes    = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
     indexRoutes      = require("./routes/index")
     
-mongoose.connect("mongodb://localhost/yelp_camp_v9");
+// mongoose.connect("mongodb://localhost/yelp_camp_v9");
+mongoose.connect("mongodb://fchasin52:rusty1@ds045157.mlab.com:45157/yelpcampfchasin")
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
